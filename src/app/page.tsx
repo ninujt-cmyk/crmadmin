@@ -382,7 +382,8 @@ export default function AdminGuide() {
                 <TabsTrigger
                   key={key}
                   value={key}
-                  className="flex flex-col items-center gap-1 py-3 px-2 data-[state=active]:bg-slate-900 dark:data-[state=active]:bg-slate-700"
+                  // Added base text colors and data-[state=active]:text-white for high contrast
+                  className="flex flex-col items-center gap-1 py-3 px-2 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 data-[state=active]:bg-slate-900 data-[state=active]:text-white dark:data-[state=active]:bg-slate-700 dark:data-[state=active]:text-white transition-all duration-200"
                 >
                   <Icon className="w-5 h-5" />
                   <span className="text-xs font-medium hidden lg:block">{section.title}</span>
